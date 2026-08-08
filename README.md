@@ -17,6 +17,7 @@ The study uses the Chinese Mammography Database (CMMD)
 The dataset itself is not included in this repository 
 ## Code
 The repository contains scripts for:
+- creating breast level matching
 - creating the labelled image manifest
 - patient-level train, validation and test splitting
 - CMMD preprocessing and data loading
@@ -31,7 +32,7 @@ The repository contains scripts for:
 - Transfer learning: full fine-tuning
 - Optimizer: Adam
 - Learning rate:0.0001
-- Loss function:weighted CrossEntropy
+- Loss function: weighted CrossEntropy
 - Epochs:20
 - Random seeds:42,123,2026
 - Data split:70% training, 15% validation and 15% test at patient level 
