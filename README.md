@@ -15,6 +15,7 @@ The model was trained using full fine-tuning, the Adam optimizer, class weighted
 ## Dataset
 The study uses the Chinese Mammography Database (CMMD)
 The dataset itself is not included in this repository 
+
 ## Code
 The repository contains scripts for:
 - creating breast level matching
@@ -24,9 +25,10 @@ The repository contains scripts for:
 -  Class-weight calculation
 - ResNet50 model creation
 - model training
-- independent test evaluation
+- test evaluation: the repository includes the 224 x 224 evaluation script as a representative example of the evaluation pipeline. the same evaluation procedure was applied to all seven input resolutions(224,299,448,512,598,800 and 1024 pixels) .For each resolution, the target size and checkpoint path were changed to correspond to the model checkpoint selected from the validation stage.
 - calculation of validation mean and standard deviation across random seeds
 - plotting performance metrics and confusion matrices
+- 
 ## Training settings 
 - Model:ResNet50 pretrained on ImageNet
 - Transfer learning: full fine-tuning
