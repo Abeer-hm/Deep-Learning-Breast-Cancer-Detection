@@ -52,7 +52,7 @@ data = {
     ]
 }
 
-# Convert the test performance results into a pandas DataFrame
+# Convert the test performance results into  DataFrame
 df = pd.DataFrame(data)
 
 # Save the test performance results as a CSV file 
@@ -88,7 +88,7 @@ for i, metric in enumerate(metrics):
         x - ((number_of_metrics - 1) * bar_width / 2)
         + i * bar_width
     )
-    # Plot the metric values across the seven input resolutions 
+    # Plot the metrics values across the seven input resolutions 
     plt.bar(
         bar_positions,
         df[metric],
@@ -139,7 +139,7 @@ plt.savefig(
 # Close the figure after saving
 plt.close()
 
-# Confirm the saved output filed
+# Confirm the saved output files
 print("CSV saved as: selected_epoch_resolution_metrics.csv")
 print(
     "Bar chart saved as: "
