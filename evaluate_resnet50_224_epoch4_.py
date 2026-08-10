@@ -168,4 +168,13 @@ results_df = pd.DataFrame({
     "false_negative": [fn],
     "true_positive": [tp]
 })
+ Step 10: Save the test evaluation results to a CSV file.
+results_df.to_csv(
+    "outputs/evaluation/resnet50_224_epoch04_test_results.csv",
+    index=False
+)
 
+print(
+    "\nResults saved to "
+    "outputs/evaluation/resnet50_224_epoch04_test_results.csv"
+)
